@@ -1,0 +1,23 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+<div [hidden]="submitted" style="width: 300px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Username</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="user.name" name="name" placeholder="Username...">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" required [(ngModel)]="user.age" name="age" placeholder="Age...">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+  </div>
+</div>
+
+<div [hidden]="!submitted">
+  <h3>You submitted successfully!</h3>
+  <button class="btn btn-success" (click)="newUser()">Add</button>
+</div>

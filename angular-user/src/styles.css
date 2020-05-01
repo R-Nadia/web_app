@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin:0;
+  height:100vh;
+  background-image:
+    linear-gradient(#297fca,#297fca),
+    linear-gradient(to bottom left,transparent 60%,#297fca 40%);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size:50.1% 100%; /* both gradient will fill 50% width and 100% height*/
+  background-position:
+    left top, /* The first one placed on the left*/
+    right bottom;/* The second one placed on the right*/
+  background-attachment: fixed;
+}
+
+label {
+  color : white ;
+
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+table {
+  margin-left:10%;
+  margin-right:10%;
+  width:100%;
+}
+H1 {
+  margin-top:20px;
+  margin-left: 700px;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 2px 2px;
+  /*background-color: white;*/
+}
+
+H5 {
+  margin-top:5px;
+  margin-left: 700px;
+  margin-right: auto;
+  text-align: center;
+  /*background-color: white;*/
+  color: black;
+  font-style: oblique;
+  font-weight: 100;
+}
+
+input[type=text-center], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
